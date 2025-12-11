@@ -1,0 +1,11 @@
+# netlify.toml
+
+[build]
+  command = "npm run build"      # Your Gemini build command
+  publish = "dist"               # Your Gemini output folder
+
+[functions]
+  directory = "netlify/functions"  # Folder for serverless functions
+
+[build.environment]
+  NODE_VERSION = "18"            # Optional, ensures Netlify uses Node 18
